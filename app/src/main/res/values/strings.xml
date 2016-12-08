@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GitHubПоиск</string>
+    <string name="title_format">"%1$s от %2$s</string>
+    <string name="title_activity_login">Авторизация</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Логин</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Закончим с этим!</string>
+    <string name="action_sign_in_short">Войти</string>
+    <string name="search_hint">Поиск</string>
+
+    <string name="error_invalid_email">Давай уже нормальный логин!</string>
+    <string name="error_invalid_password">Ну ты чего, пароль слишком короткий!</string>
+    <string name="error_incorrect_password">Обмануть пытаешься?</string>
+    <string name="error_field_required">Воу воу! Сюда введи чего-нибудь!</string>
+    <string name="login_information">Для использования GitHub API v3 требуется авторизация. Поэтому, давай, выкладывай уже свои данные…</string>
+    <string name="error_title">Ошибка</string>
+    <string name="error_wrong_credentials">ГитХаб говорит, что не знает такого пользователя. Решил скрыть от нас реальные данные?</string>
+    <string name="button_ok">Ладно, я понял</string>
+
+</resources>
