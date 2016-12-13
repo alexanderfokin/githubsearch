@@ -56,3 +56,4 @@ local.properties
 
 # kde
 .directory
+/keystore.jks

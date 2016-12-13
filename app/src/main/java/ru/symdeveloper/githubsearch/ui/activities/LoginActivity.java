@@ -82,9 +82,11 @@ public class LoginActivity
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
-        presenter.onViewDetached(false);
+    protected void onDestroy() {
+        if (presenter != null) {
+            presenter.onViewDetached(false);
+            super.onDestroy();
+        }
     }
 
     @Override
@@ -122,7 +124,6 @@ public class LoginActivity
             passwordEditText.setError(getString(R.string.error_invalid_password));
             focusView = passwordEditText;
             cancel = true;
-
         }
         if (TextUtils.isEmpty(login)) {
             loginEditText.setError(getString(R.string.error_field_required));

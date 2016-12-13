@@ -88,9 +88,11 @@ public class MainActivity extends AppCompatActivity implements MainView,
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
-        presenter.onViewDetached(false);
+    protected void onDestroy() {
+        if (presenter != null) {
+            presenter.onViewDetached(false);
+        }
+        super.onDestroy();
     }
 
     @Override
